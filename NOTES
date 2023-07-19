@@ -1,0 +1,19 @@
+Efficiency part ii
+
+ideas:
+* don't send messages to yourself! (saves at least 1 message-per-op)
+
+* don't send OKs to each other?
+    (??)
+    * but also somehow stay correct
+
+* batching?
+    * hold onto a value for a while, so you can propagate multiple values in a single message
+    * concern: might be hard to implement / tune
+        (but seems like it'd save us messages)
+
+* something with the topology ..?
+    * a binary tree?
+    * the given topology? (a 2d grid?)
+
+
